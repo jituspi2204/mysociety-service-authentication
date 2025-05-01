@@ -1,0 +1,55 @@
+package com.mysociety.authentication.enums;
+
+public enum ResponseError {
+    VALIDATION_ERROR,
+    BAD_REQUEST,
+    MISSING_PARAMETER,
+    INVALID_PARAMETER,
+    UNSUPPORTED_MEDIA_TYPE,
+    MALFORMED_JSON,
+    TYPE_MISMATCH,
+
+    // 401 - Unauthorized
+    UNAUTHORIZED,
+    TOKEN_EXPIRED,
+    TOKEN_INVALID,
+    LOGIN_FAILED,
+
+    // 403 - Forbidden
+    FORBIDDEN,
+    ACCESS_DENIED,
+
+    // 404 - Not Found
+    RESOURCE_NOT_FOUND,
+    ENDPOINT_NOT_FOUND,
+    USER_NOT_FOUND,
+    DATA_NOT_FOUND,
+
+    // 409 - Conflict
+    DUPLICATE_RESOURCE,
+    CONFLICT_ERROR,
+
+    // 415 - Unsupported Media Type
+    MEDIA_TYPE_NOT_SUPPORTED,
+
+    // 429 - Too Many Requests
+    TOO_MANY_REQUESTS,
+    RATE_LIMIT_EXCEEDED,
+
+    // 500 - Server Errors
+    INTERNAL_SERVER_ERROR,
+    SERVICE_UNAVAILABLE,
+    DATABASE_ERROR,
+    DEPENDENCY_FAILURE,
+    UNKNOWN_ERROR,
+
+    // Custom/Other
+    EMAIL_NOT_VERIFIED,
+    PHONE_NOT_VERIFIED,
+    ACCOUNT_LOCKED,
+    OTP_EXPIRED,
+    OPERATION_NOT_ALLOWED,
+    UNDEFINED_ERROR,
+    AUTHENTICATION_FAILED,
+    USER_EXIST
+}
